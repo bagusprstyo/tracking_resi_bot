@@ -228,7 +228,7 @@ if __name__ == '__main__':
     print("🚀 Bot nyala dengan Database SQLite & Fitur Tombol...")
     
     # 2. Build Application
-    app = ApplicationBuilder().token(TOKEN).build()
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
 
     # 3. Registrasi Handlers
     app.add_handler(CommandHandler("start", start))
@@ -239,3 +239,4 @@ if __name__ == '__main__':
     # 4. Jalankan Bot
 
     app.run_polling()
+
